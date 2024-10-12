@@ -640,9 +640,17 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
 
 /* RESPONSIVE */
 
-@media screen {
-  
+.responsive {
+  display: block;
 }
+
+@media screen and (max-width:320px) {
+  .responsive {
+    display: flex;
+    color: red;
+  }
+}
+
 
 
 
