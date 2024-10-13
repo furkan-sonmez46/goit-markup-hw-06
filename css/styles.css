@@ -30,6 +30,7 @@ body {
   font-size: 16px;
   line-height: 1.5em;
   
+  
 }
 
 img {
@@ -640,18 +641,14 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
 
 /* RESPONSIVE */
 
-.responsive {
-  display: block;
-}
-
-@media screen and (max-width:320px) {
-  .responsive {
+/* @media screen and (max-width:320px) {
+  header {
     display: flex;
+    width: 100%;
+    flex-direction: column;
     color: red;
   }
-}
-
-
+} */
 
 
 
