@@ -1,3 +1,5 @@
+/* GLOBAL RULES */
+
 *,
 ::before, 
 ::after {
@@ -36,22 +38,23 @@ img {
     display: block;
 }
 
+.container {
+  width: 100%;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* HEADER */
+
 .header {
-  height: 72px;
+  height: 56px;
   border-bottom: 1px solid #e7e9fc;
 }
 
-.container {
-  width: 1158px;
-  align-items: center;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 .container-header {
-  max-width: 1158px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -196,10 +199,44 @@ img {
 
 }
 
+/* HEADER RESPONSIVE */
+
+@media (max-width: 767px) {
+  .nav-list, .address {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+.header {
+  height: 72px;
+}
+
+.address {
+  flex-direction: column;
+  gap: 12px;
+}
+
+  .icon-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .icon-menu {
+    display: none;
+  }
+}
+
+
+
+/* MAIN END SECTIONS */
 
 section {
   padding: 120px 0;
 }
+
+/* SECTION HERO */
 
 .section-hero {
   max-width: 1440px;
@@ -274,6 +311,8 @@ section {
     overflow: hidden;
 }
 
+/* SECTION ONE */
+
 .section-one-list {
   display: flex;
   gap: 24px;
@@ -309,6 +348,8 @@ section {
   font-size: 16px;
   line-height: 1.5em;
 }
+
+/* SECTION TWO */
 
 .section-two {
   background-color: #f4f4fd;
@@ -429,6 +470,8 @@ section {
     margin-bottom: 72px;
 }
 
+/* SECTION THREE */
+
 .section-three-list {
   list-style-type: none;
   display: flex;
@@ -507,6 +550,8 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
   line-height: 1.5em;
   letter-spacing: 0.02em;
 }
+
+/* FOOTER */
 
 .footer {
   background-color: #2e2f42;
@@ -638,6 +683,8 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
 .footer-form-icon {
     margin-left: 16px;
 }
+
+/* MODALS */
 
 .modal-window-container {
   position: fixed;
