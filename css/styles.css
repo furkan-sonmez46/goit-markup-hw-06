@@ -677,8 +677,7 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
   max-width: 1440px;
   background-color: #2e2f42;
   color: #ffffff;
-  height: 312px;
-  padding: 100px 0;
+  padding: 96px 16px;
 }
 
 .container-footer {
@@ -803,6 +802,38 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
 
 .footer-form-icon {
     margin-left: 16px;
+}
+
+/* FOOTER RESPONSIVE */
+
+@media (max-width: 767px) {
+  .container-footer {
+    flex-direction: column;
+    gap: 72px;
+  }
+  
+  .footer-form {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  
+  .footer-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 1280px) {
+  
 }
 
 /* MODALS */
